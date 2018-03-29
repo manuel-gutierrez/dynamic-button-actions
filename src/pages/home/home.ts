@@ -18,16 +18,14 @@ export class HomePage {
 // This function trigger a new page nav push
 // input: pageToNavigate
   goToPage(pageToNavigate:string) {
-    console.log("Whas going on", pageToNavigate);
     this.navCtrl.push(pageToNavigate);
    }
 
   ionViewDidLoad() {
-    
+    // On load  grab an element with Id ctaButton
     this.ctaButton= document.getElementById('ctaButton');
     this.ctaButton.addEventListener('click', ()=>{
       this.goToPage(this.ctaButton.dataset.page); 
-      // console.log("Execute");
     },true);
    
   }
