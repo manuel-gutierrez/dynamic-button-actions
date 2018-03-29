@@ -1,0 +1,8 @@
+{
+  "name": "ionic-dynamic-buttons",
+  "app_id": "11ea847b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
